@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Visitor_Composite.Composite.Case" Collapsed="true">
+    <Position X="14.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAACAAAAAAABBAAABAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Composite\ComputerItems\Case.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Visitor_Composite.Composite.CPU" Collapsed="true">
+    <Position X="18.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAACAAEAAAABAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Composite\ComputerItems\CPU.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Visitor_Composite.Composite.MotherBoard" Collapsed="true">
+    <Position X="16.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAACIAAAAAABAAAAhAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Composite\ComputerItems\MotherBoard.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ComputerItem" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Visitor_Composite.Composite.Computer" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hQAAABAAAAAAAAAAAAAAAAAAAgAAAAABAIgAEAAAAAA=</HashCode>
+      <FileName>Composite\Computer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ComputerItem" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Visitor_Composite.Composite.ComputerItem" Collapsed="true">
+    <Position X="18.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAACAAEAAAABAAAAAAEQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Composite\ComputerItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Visitor_Composite.Visitor.ComputerVisitor" Collapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABABAAAAAAAABgAAAAAAAE=</HashCode>
+      <FileName>Visitor\ComputerVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Visitor_Composite.Visitor.ConcreteComputerVisitor" Collapsed="true">
+    <Position X="14.75" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABABAAAAAAAABgAAAAAAAE=</HashCode>
+      <FileName>Visitor\ConcreteComputerVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Visitor_Composite.Device" Collapsed="true">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQQAAAAAAAAAEAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Device.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Computer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Visitor_Composite.Program" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <AssociationLine Name="ComputerVisitor" Type="Visitor_Composite.Visitor.ComputerVisitor" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.5" Y="0.75" />
+        <Point X="15.812" Y="0.75" />
+        <Point X="15.812" Y="1.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Device" Type="Visitor_Composite.Device" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18" Y="0.812" />
+        <Point X="19.625" Y="0.812" />
+        <Point X="19.625" Y="1.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAgAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ComputerVisitor" />
+      <Property Name="Device" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
